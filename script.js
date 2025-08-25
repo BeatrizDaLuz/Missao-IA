@@ -42,11 +42,76 @@ function mostraPergunta(){
     mostraAlternativa();
 }
 function mostraAlternativas();{
-    for(const alternativas of perguntaAtual.alternativas){
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativa = document.createElement("button");
         botaoAlternativa.textContent = alternativas;
-        caixaAlternativas.appendChild(botaoAlternativa);
+        caixaAlternativa.appendChild(botaoAlternativa);
     }
 }
 
 mostraPergunta();.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas
+    }
+}
+
+
+
+
+
+
+
+
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
+}
+
+function mostraResultado() {
+  caixaPerguntas.textContent ="Em 2049...";
+  textoResultado.textContent = historiaFinal;
+  caixaAlternativas.textContent = "";
+}
+
+mostraPergunta();
